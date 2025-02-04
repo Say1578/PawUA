@@ -1,0 +1,106 @@
+.search-section {
+    background-image: url(/src/assets/background.jpg.jpg); /* Укажите фон с животными */
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Прозрачный белый фон */
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .search-input,
+  .select-input {
+    border: 2px solid #72da6f;
+    border-radius: 8px;
+    padding: 10px 35px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 340px;
+  }
+  
+  .search-input:focus,
+  .select-input:focus {
+    border-color: #5ec259;
+    position: relative;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выровнять элементы по центру */
+    gap: 15px; /* Расстояние между элементами */
+}
+
+.search-button {
+    margin-top: 20px;
+    background-color: #72da6f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%; 
+    text-align: center; 
+}
+
+.search-button:hover {
+    background-color: #5ec259;
+}
+
+  .input-icon-search {
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+  }
+
+  .input-icon-category {
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+  }
+
+  .input-icon-location {
+      width: 25px;
+      height: 25px;
+      z-index: 1;
+  }
+
+
+  .position-search {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  
+  .position-category {
+    position: absolute;
+    top: 12px;
+    left: 10px; 
+  }
+  
+  .position-location {
+    position: absolute;
+    top: 8px;
+    left: 8px; 
+  }

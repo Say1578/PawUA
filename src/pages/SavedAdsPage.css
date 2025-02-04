@@ -1,0 +1,74 @@
+.saved-ads-page {
+    padding: 40px;
+  }
+  
+  .ads-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 1024px) {
+    .ads-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ads-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ads-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .save-post {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .mine-post {
+    margin-bottom: 20px;
+  }
+
+
+
+
+  .product-card-wrapper {
+    position: relative;
+  }
+  
+  .remove-icon-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .remove-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .remove-all-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .remove-all-button:hover {
+    background-color: #d32f2f;
+  }
+  

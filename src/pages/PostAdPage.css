@@ -1,0 +1,285 @@
+.post-ad-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 70px;
+}
+
+.post-ad-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #757575;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-input-post {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #72da6f;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.post-ad-form {
+    display: flex;
+    gap: 40px;
+}
+
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .form-left {
+    border-right: 1px solid #C5C5C5;
+    padding-right: 100px;
+} */
+
+.foto-animaladd {
+    margin-bottom: 15px;
+}
+
+.form-left, .form-right {
+    width: 50%;
+}
+
+.add-namepost {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-options {
+    width: 370px;
+    padding: 10px;
+    border: 2px  solid #72da6f;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #72da6f;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+textarea {
+    padding: 10px;
+    border: 2px solid #72da6f;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.price-input {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.grn {
+    margin-top: 7px;
+}
+
+.price-input span {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.position-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.add-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-input-price {
+width: 400px;
+padding: 10px;
+border: 2px solid #72da6f;
+border-radius: 5px;
+margin-bottom: 15px;
+outline: none;
+}
+
+.additional-info-btn {
+    background: none;
+    border: 2px solid black;
+    padding: 10px 30px;
+    border-radius: 17px;
+    cursor: pointer;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.additional-info-btn:hover {
+    background: #72da6f;
+    color: white;
+}
+
+.photo-upload {
+    border: 2px solid black;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 600px;
+    height: 200px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-upload:hover {
+    border: 2px solid #72da6f;
+    fill: #72da6f;
+}
+
+.camera-icon {
+    width: 90px;
+    height: 90px;
+}  
+
+.add-foto {
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.uploaded-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.clear-images-button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.clear-images-button:hover {
+    background: #cc0000;
+}
+
+.group-add {
+    display: flex;
+}
+
+.post-description {
+    margin-top: 20px; 
+}
+
+.add-description-title {
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: none;
+    width: 920px;
+    height: 400px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    margin-left: 190px;
+}
+
+.contact-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit-button {
+    background: linear-gradient(45deg, #72da6f, #3cb371);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    outline: none;
+}
+
+.submit-button:disabled {
+    background: #d3d3d3; 
+    color: #a8a8a8; 
+    cursor: not-allowed; 
+    transform: none; 
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+}
+
+/* =========================== */
+
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .back-button {
+    background: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .back-icon {
+    width: 30px;
+    height: 30px;
+    fill: black;
+    transition: transform 0.2s ease, fill 0.2s;
+  }
+  
+  .back-button:hover .back-icon {
+    fill: #72da6f;
+    transform: scale(1.1);
+  }

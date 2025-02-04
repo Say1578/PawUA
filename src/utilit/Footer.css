@@ -1,0 +1,133 @@
+.footer {
+    background: black;
+}
+
+.footer-container {
+    padding-top: 20px;
+    justify-content: space-around;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.footer-contact {
+    margin-top: 40px;
+}
+
+
+
+.footer-title {
+    color: #6EF267;
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 15px;
+}
+
+.footer-item {
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.60);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+text-decoration: none;
+display: flex;
+}
+
+.footer-logosect {
+    text-align: center;
+}
+
+.logo-span {
+    color: #72da6f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-class {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.group-about {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.about {
+    color: #bebebe;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+line-height: normal;
+letter-spacing: 0.39px;
+text-decoration: none;
+}
+
+.dreamteam {
+    color: #A5A5A5;
+text-align: center;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 13px;
+line-height: normal;
+letter-spacing: 0.39px;
+}
+
+
+
+.footer-downloadsect {
+    margin-top: 40px;
+}
+
+.footer-download {
+    color: #6EF267;
+font-size: 14px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 23px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.download-button {
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+    padding: 8px 20px 5px 20px;
+    border-radius: 8px;
+    letter-spacing: 0.96px;
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 250ms, background-color 250ms;
+}
+
+.download-button:hover {
+    transform: scale(1.1); 
+    background-color: #333;
+}
+
+
+.text-andr {
+    text-align: start;
+}
+
+.android-icon {
+    fill: white;
+    width: 40px;
+    height: 40px;
+}

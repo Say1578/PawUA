@@ -1,0 +1,159 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Окно жалобы */
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 480px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Заголовок */
+  .modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Кнопка закрытия */
+  .close-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  /* Варианты жалоб */
+  .report-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+  
+  .report-options label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .report-options input {
+    margin-right: 8px;
+  }
+  
+  /* Поле ввода */
+  .report-textarea {
+    width: 90%;
+    height: 120px;
+    border: 2px solid #72da6f;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    resize: none;
+  }
+  
+  /* Блок предупреждения */
+  .report-warning-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .warning-icon {
+    width: 28px;
+    height: 28px;
+    fill: #72da6f;
+    margin-bottom: 5px;
+  }
+  
+  /* Кнопка отправки */
+  .submit-report-button {
+    background: #72da6f;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-report-button:hover {
+    background: #5dbf5a;
+  }
+
+
+  /* Контейнер чекбоксов */
+.report-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  
+  /* Кастомный чекбокс */
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Скрываем стандартный чекбокс */
+  .custom-checkbox input {
+    display: none;
+  }
+  
+  /* Стиль кастомного чекбокса */
+  .checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    background: white;
+  }
+  
+  /* Когда чекбокс выбран */
+  .custom-checkbox input:checked + .checkbox {
+    background: #72da6f;
+  }
+  
+  /* ❌ Удаляем галочку внутри чекбокса */
+  .custom-checkbox input:checked + .checkbox::after {
+    display: none;
+  }
