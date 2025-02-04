@@ -8,7 +8,7 @@ const SavedAdsPage: React.FC = () => {
   const { cart, removeProduct, clearCart } = useCart();
   const [myAds, setMyAds] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [ _, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchMyAds = async () => {

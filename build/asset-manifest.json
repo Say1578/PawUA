@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ZooFeel/static/css/main.259a28f1.css",
+    "main.js": "/ZooFeel/static/js/main.eff5eb29.js",
+    "static/media/background.jpg.jpg": "/ZooFeel/static/media/background.jpg.547c25a39ca32f48ef7b.jpg",
+    "static/media/admin-panel.svg": "/ZooFeel/static/media/admin-panel.a97718388df5898c6683b60b50bfb392.svg",
+    "static/media/cat-icon.svg": "/ZooFeel/static/media/cat-icon.4089b8bb6a819f019610689098209ea9.svg",
+    "static/media/report.svg": "/ZooFeel/static/media/report.6d30e6eb52779e4172709b6e1edb4da3.svg",
+    "static/media/paw.svg": "/ZooFeel/static/media/paw.32cfcb371fe725347eeab539ecd8f9d7.svg",
+    "static/media/camera.svg": "/ZooFeel/static/media/camera.b8be76ea5cd8919c0773d2b1e2b287b1.svg",
+    "static/media/android.svg": "/ZooFeel/static/media/android.82a742179bfa051ea5364d93e6eef5f7.svg",
+    "static/media/warning.svg": "/ZooFeel/static/media/warning.413c5d6a48b2ef58279412370cea5a70.svg",
+    "static/media/location.svg": "/ZooFeel/static/media/location.833c145408e33e0e8896d53f29b91b55.svg",
+    "static/media/close-icon.svg": "/ZooFeel/static/media/close-icon.8265f088f188bceed9ff7ed9b6ce0433.svg",
+    "static/media/arrow-left.svg": "/ZooFeel/static/media/arrow-left.e59f980c999f901f109e330618caf759.svg",
+    "index.html": "/ZooFeel/index.html",
+    "static/media/search.svg": "/ZooFeel/static/media/search.44144c63f1114bd734334869ead5c143.svg",
+    "static/media/category.svg": "/ZooFeel/static/media/category.8085f3b203232999d73294c28c4c97d0.svg",
+    "main.259a28f1.css.map": "/ZooFeel/static/css/main.259a28f1.css.map",
+    "main.eff5eb29.js.map": "/ZooFeel/static/js/main.eff5eb29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.259a28f1.css",
+    "static/js/main.eff5eb29.js"
+  ]
+}

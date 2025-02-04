@@ -16,7 +16,7 @@ export const ProductDetailsPage: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isReportModalOpen, setIsReportModalOpen] = useState(false);
-  const { cart, addProduct, removeProduct, isInCart } = useCart();
+  const { addProduct, removeProduct, isInCart } = useCart();
 
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_BASE_URL}/pets/${id}`)

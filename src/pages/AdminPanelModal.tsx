@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react";
 import "./AdminPanelModal.css";
-import { useCart } from '../context/CartContext';
-import { Product } from '../types';
+// import { useCart } from '../context/CartContext';
+// import { Product } from '../types';
 
 const AdminPanelModal: React.FC = () => {
   
-    const [token, setToken] = useState<string | null>(null);
+    const [setToken] = useState<string | null>(null);
 
     useEffect(() => {
         const storedToken = localStorage.getItem('token');
         if (!storedToken) {
           window.location.href = '/';
-        } else {
-          setToken(storedToken);
-        }
+        } 
+        // else {
+        //   setToken(storedToken);
+        // }
     }, []);
   
     return (

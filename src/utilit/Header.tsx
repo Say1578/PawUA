@@ -97,7 +97,7 @@ const Header: React.FC = () => {
       });
 
       if (response.ok) {
-        const data = await response.json();
+        // const data = await response.json();
         // localStorage.setItem('token', data.token);
         closeModals();
       } else {
