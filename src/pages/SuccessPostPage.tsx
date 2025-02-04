@@ -6,7 +6,7 @@ import { ReactComponent as CatIcon } from "../assets/cat-icon.svg"; // ✅ По�
 const SuccessPostPage: React.FC = () => {
   const navigate = useNavigate(); // ✅ Хук для навигации
   
-  const [ setToken] = useState<string | null>(null);
+  // const [ setToken] = useState<string | null>(null);
 
   useEffect(() => {
     const storedToken = localStorage.getItem('token');

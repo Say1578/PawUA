@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ZooFeel/static/css/main.259a28f1.css",
-    "main.js": "/ZooFeel/static/js/main.eff5eb29.js",
+    "main.js": "/ZooFeel/static/js/main.88a3f1c5.js",
     "static/media/background.jpg.jpg": "/ZooFeel/static/media/background.jpg.547c25a39ca32f48ef7b.jpg",
     "static/media/admin-panel.svg": "/ZooFeel/static/media/admin-panel.a97718388df5898c6683b60b50bfb392.svg",
     "static/media/cat-icon.svg": "/ZooFeel/static/media/cat-icon.4089b8bb6a819f019610689098209ea9.svg",
@@ -17,10 +17,10 @@
     "static/media/search.svg": "/ZooFeel/static/media/search.44144c63f1114bd734334869ead5c143.svg",
     "static/media/category.svg": "/ZooFeel/static/media/category.8085f3b203232999d73294c28c4c97d0.svg",
     "main.259a28f1.css.map": "/ZooFeel/static/css/main.259a28f1.css.map",
-    "main.eff5eb29.js.map": "/ZooFeel/static/js/main.eff5eb29.js.map"
+    "main.88a3f1c5.js.map": "/ZooFeel/static/js/main.88a3f1c5.js.map"
   },
   "entrypoints": [
     "static/css/main.259a28f1.css",
-    "static/js/main.eff5eb29.js"
+    "static/js/main.88a3f1c5.js"
   ]
 }

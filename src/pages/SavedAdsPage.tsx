@@ -8,7 +8,7 @@ const SavedAdsPage: React.FC = () => {
   const { cart, removeProduct, clearCart } = useCart();
   const [myAds, setMyAds] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  const [ _, setError] = useState<string | null>(null);
+  // const [ _, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchMyAds = async () => {
@@ -25,9 +25,9 @@ const SavedAdsPage: React.FC = () => {
         setMyAds(data);
       } catch (err: unknown) {
         if (err instanceof Error) {
-          setError(err.message);
+          // setError(err.message);
         } else {
-          setError('An unknown error occurred');
+          // setError('An unknown error occurred');
         }
       } finally {
         setLoading(false);
@@ -51,9 +51,9 @@ const SavedAdsPage: React.FC = () => {
       setMyAds((prevAds) => prevAds.filter((pet) => pet.id !== id));
     } catch (err: unknown) {
       if (err instanceof Error) {
-        setError(err.message);
+        // setError(err.message);
       } else {
-        setError('An unknown error occurred');
+        // setError('An unknown error occurred');
 
       }
     };

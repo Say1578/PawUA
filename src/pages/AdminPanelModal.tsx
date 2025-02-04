@@ -5,7 +5,7 @@ import "./AdminPanelModal.css";
 
 const AdminPanelModal: React.FC = () => {
   
-    const [setToken] = useState<string | null>(null);
+    // const [_, setToken] = useState<string | null>(null);
 
     useEffect(() => {
         const storedToken = localStorage.getItem('token');
