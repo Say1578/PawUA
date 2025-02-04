@@ -24,8 +24,8 @@ const Footer: React.FC = () => {
             <p className='logo-class'><span className='logo-span'>ZOO</span>FEEL</p> 
           </h1>
           <div className='group-about'>
-          <p><a className='about' href="/about">Про нас</a></p>
-          <p><a className='about' href="/privacy-policy">Політика конфіденційності</a></p>
+          <p><a className='about' href="#/about">Про нас</a></p>
+          <p><a className='about' href="#/privacy-policy">Політика конфіденційності</a></p>
           </div>
           <p className='dreamteam'>DreamTeam © 2025 All rights reserved</p>
         </div>
