@@ -27,12 +27,12 @@ export const AdPopup: React.FC = () => {
   };
 
   return (
-    <div className={`ad-popup ${isVisible ? "visible" : ""}`}>
-      <div className="ad-timer"></div>
-      <span className="ad-label">Реклама</span>
-      <p className="ad-description">Відвідати TechnoBoom:</p>
+    <div className={`d-popup ${isVisible ? "visible" : ""}`}>
+      <div className="d-timer"></div>
+      <span className="d-label">Реклама</span>
+      <p className="d-description">Відвідати TechnoBoom:</p>
       <Ad />
-      <button className="ad-close" onClick={closeAd}>&times;</button>
+      <button className="d-close" onClick={closeAd}>&times;</button>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-.ad-popup {
+.d-popup {
   position: fixed;
   bottom: -100px; /* Окно скрыто в начале */
   right: 20px; /* Теперь окно справа */
@@ -16,13 +16,13 @@
   transition: bottom 0.5s ease-in-out, opacity 0.5s, transform 0.5s ease-in-out;
 }
 
-.ad-popup.visible {
+.d-popup.visible {
   bottom: 20px;
   opacity: 1;
   transform: translateY(0);
 }
 
-.ad-timer {
+.d-timer {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,25 +37,25 @@
   to { width: 0; }
 }
 
-.ad-label {
+.d-label {
   font-size: 12px;
   color: gray;
   display: block;
 }
 
-.ad-description {
+.d-description {
   margin: 10px 0;
   font-size: 14px;
   color: white;
 }
 
-.ad-image {
+.d-image {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
 
-.ad-close {
+.d-close {
   position: absolute;
   top: 5px;
   right: 10px;
