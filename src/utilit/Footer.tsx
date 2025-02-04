@@ -3,10 +3,8 @@ import React from 'react';
 import './Footer.css';
 
 import { ReactComponent as AndroidIcon } from '../assets/android.svg';
-import { useNavigate } from 'react-router-dom';
 
 const Footer: React.FC = () => {
-  const navigate = useNavigate();
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -26,8 +24,8 @@ const Footer: React.FC = () => {
             <p className='logo-class'><span className='logo-span'>ZOO</span>FEEL</p> 
           </h1>
           <div className='group-about'>
-          <p><button className='about' onClick={() => navigate('/about')}>Про нас</button></p>
-          <p><button className='about' onClick={() => navigate('/privacy-policy')}>Політика конфіденційності</button></p>
+          <p><a className='about' href="#/about">Про нас</a></p>
+          <p><a className='about' href="#/privacy-policy">Політика конфіденційності</a></p>
           </div>
           <p className='dreamteam'>DreamTeam © 2025 All rights reserved</p>
         </div>
