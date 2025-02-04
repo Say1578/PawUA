@@ -174,7 +174,7 @@ const PostAdPage: React.FC = () => {
       // const data = await response.json();
 
       if (response.ok) {
-        window.location.href = '/success';
+        window.location.href = '#/success';
       }
 
     } catch (error) {

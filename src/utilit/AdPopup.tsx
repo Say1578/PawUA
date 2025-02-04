@@ -5,13 +5,21 @@ export const AdPopup: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const isGlobalReload = performance.navigation.type === 1;
+    const handleBeforeUnload = () => {
+      sessionStorage.setItem("reload", "true");
+    };
 
-    if (isGlobalReload) {
+    const isReload = sessionStorage.getItem("reload") === "true";
+    if (isReload) {
+      sessionStorage.removeItem("reload");
       setTimeout(() => setIsVisible(true), 500);
       setTimeout(() => closeAd(), 5500);
     }
 
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
   }, []);
 
   const closeAd = () => {
@@ -28,6 +36,7 @@ export const AdPopup: React.FC = () => {
     </div>
   );
 };
+
 
 
 const Ad = () => {
