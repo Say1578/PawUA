@@ -79,6 +79,7 @@ textarea {
 
 .price-input {
     display: flex;
+    justify-content: center;
 }
 
 .grn {
@@ -87,7 +88,7 @@ textarea {
 
 .price-input span {
     font-size: 20px;
-    margin-left: 80px;
+    margin-left: 5px;
 }
 
 .position-info {
