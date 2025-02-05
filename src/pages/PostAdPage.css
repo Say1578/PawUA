@@ -27,7 +27,7 @@
 
 .post-ad-form {
     display: flex;
-    gap: 40px;
+    gap: 320px;
 }
 
 
@@ -36,11 +36,6 @@
     flex-direction: column;
     align-items: center;
 }
-
-/* .form-left {
-    border-right: 1px solid #C5C5C5;
-    padding-right: 100px;
-} */
 
 .foto-animaladd {
     margin-bottom: 15px;
@@ -63,7 +58,7 @@ label {
 }
 
 .input-options {
-    width: 370px;
+    width: 326px;
     padding: 10px;
     border: 2px  solid #72da6f;
     border-radius: 5px;
@@ -90,7 +85,7 @@ textarea {
 
 .price-input {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .grn {
@@ -139,13 +134,13 @@ outline: none;
 
 .photo-upload {
     border: 2px solid black;
-    padding: 30px;
+    padding: 40px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    width: 400px;
+    width: 500px;
     height: 200px;
     justify-content: center;
     position: relative;
@@ -209,14 +204,13 @@ outline: none;
 }
 
 textarea {
-    resize: none;
-    width: 720px;
-    height: 400px;
+    width: 850px;
+height: 420px;
 }
 
 .contact-info {
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 80px;
 }
 
 .contact-fields {
@@ -242,13 +236,6 @@ textarea {
     cursor: pointer;
     transition: transform 0.3s ease;
     outline: none;
-}
-
-.submit-button:disabled {
-    background: #d3d3d3; 
-    color: #a8a8a8; 
-    cursor: not-allowed; 
-    transform: none; 
 }
 
 .submit-button:hover {
