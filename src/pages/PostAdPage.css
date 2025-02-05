@@ -1,7 +1,6 @@
 .post-ad-container {
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
     background: white;
     border-radius: 10px;
     text-align: center;
@@ -199,13 +198,13 @@ outline: none;
 }
 
 textarea {
-    width: 850px;
+    width: 750px;
 height: 420px;
 }
 
 .contact-info {
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 .contact-fields {
