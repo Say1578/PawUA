@@ -1,260 +1,260 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 40px; /* Увеличенные отступы */
-    background-color: #fff;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px; /* Увеличенные отступы */
+  background-color: #fff;
+}
 
-  .header::after {
-    content: "";
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
+.header::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
 height: 16px;
 background-color: #72da6f;
-  }
-  
-  .header-left {
-    display: flex;
-    align-items: center;
-    gap: 3px; /* Расстояние между элементами */
-  }
-  
-  .paw-center {
-    display: flex;
-    align-items: center;
-  }
-  
-  .brand {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .zoo {
-    color: #72da6f;
-    font-size: 28px; /* Увеличенный размер текста */
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .feel {
-    color: #000;
-    font-size: 24px; /* Увеличенный размер текста */
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .paw-icon {
-    width: 50px; /* Размер иконки лапки */
-    height: 45px;
-    fill: #000;
-    margin-right: 40px;
-  }
-  
-  .post-ad-button {
-    background-color: #72da6f;
-    color: #000;
-    font-weight: bold;
-    border: #72da6f;
-    border-radius: 25px;
-    padding: 17px 20px; /* Увеличенные размеры кнопки */
-    font-size: 16px; /* Увеличенный текст кнопки */
-    cursor: pointer;
-    transition: background-color 1s ease;
-  }
-  
-  .post-ad-button:hover {
-    background-color: white; /* Темнее на hover */
-    border-radius: 25px;
-    border: none;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 3px; /* Расстояние между элементами */
+}
+
+.paw-center {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.zoo {
+  color: #72da6f;
+  font-size: 28px; /* Увеличенный размер текста */
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.feel {
+  color: #000;
+  font-size: 24px; /* Увеличенный размер текста */
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.paw-icon {
+  width: 50px; /* Размер иконки лапки */
+  height: 45px;
+  fill: #000;
+  margin-right: 40px;
+}
+
+.post-ad-button {
+  background-color: #72da6f;
+  color: #000;
+  font-weight: bold;
+  border: #72da6f;
+  border-radius: 25px;
+  padding: 17px 20px; /* Увеличенные размеры кнопки */
+  font-size: 16px; /* Увеличенный текст кнопки */
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+.post-ad-button:hover {
+  background-color: white; /* Темнее на hover */
+  border-radius: 25px;
+  border: none;
 outline: 3px solid #6EF267;
 color: #72da6f;
-  }
-  
-  .header-right {
-    display: flex;
-    align-items: center;
-    gap: 30px; /* Расстояние между иконками */
-  }
-  
-  .icon {
-    width: 36px; /* Увеличенные иконки справа */
-    height: 36px;
-    fill: #555; /* Серый цвет */
-    cursor: pointer;
-    transition: fill 0.3s ease;
-  }
-  
-  .icon-user {
-    width: 40px; /* Увеличенные иконки справа */
-    height: 40px;
-    fill: black; /* Серый цвет */
-    cursor: pointer;
-    transition: fill 0.3s ease;
-  }
+}
 
-  .icon-user:hover {
-    fill: #72da6f;
-  }
-  
-  .icon:hover {
-    fill: #72da6f;
-  }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Расстояние между иконками */
+}
 
-  .icon-active {
-    transition: fill 0.3s ease;
-    fill: #72da6f !important; /* Зеленый цвет после перехода на страницу сохраненных объявлений */
-  }
+.icon {
+  width: 36px; /* Увеличенные иконки справа */
+  height: 36px;
+  fill: #555; /* Серый цвет */
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
 
+.icon-user {
+  width: 40px; /* Увеличенные иконки справа */
+  height: 40px;
+  fill: black; /* Серый цвет */
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
 
-  /* ===================== */
+.icon-user:hover {
+  fill: #72da6f;
+}
+
+.icon:hover {
+  fill: #72da6f;
+}
+
+.icon-active {
+  transition: fill 0.3s ease;
+  fill: #72da6f !important; /* Зеленый цвет после перехода на страницу сохраненных объявлений */
+}
 
 
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .modal-content {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    width: 400px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    text-align: center;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;  
-    width: 30px;
-    transition: color 350ms ease;
-  }
+/* ===================== */
 
-  .close-button:hover {
-    color: #72da6f;
-  }
-  
-  .login-form label,
-  .register-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .login-form input,
-  .register-form input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 2px solid #72da6f;
-    border-radius: 8px;
-    font-size: 14px;
-    outline: none;
-  }
-  
-  .login-button,
-  .register-button {
-    margin-top: 20px;
-    background-color: #72da6f;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 17px;
-    padding: 12px 35px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .login-button:hover,
-  .register-button:hover {
-    background-color: #5ec259;
-  }
-  
-  .register-link,
-  .login-link {
-    margin-top: 10px;
-    color: #72da6f;
-    font-size: 14px;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-  }
 
-  .password-texting {
-    margin-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
-  .email-texting {
-    margin-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+.modal-content {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+}
 
-  .title-login {
-    margin-bottom: 15px;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    line-height: normal;
-    letter-spacing: 0.72px;
-  }
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;  
+  width: 30px;
+  transition: color 350ms ease;
+}
+
+.close-button:hover {
+  color: #72da6f;
+}
+
+.login-form label,
+.register-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-form input,
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #72da6f;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.login-button,
+.register-button {
+  margin-top: 20px;
+  background-color: #72da6f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 17px;
+  padding: 12px 35px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: #5ec259;
+}
+
+.register-link,
+.login-link {
+  margin-top: 10px;
+  color: #72da6f;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.password-texting {
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-texting {
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-login {
+  margin-bottom: 15px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
 
 /* Админ панель настройки */
 
 /* Новый стиль для кнопки с увеличенным размером */
 .admin-panel-button {
-  background-color: transparent; /* Убираем фон */
-  color: #000;
-  font-weight: bold;
-  border: none;
-  /* border-radius: 25px; */
-  /* padding: 20px 30px; Увеличиваем отступы для увеличения размера кнопки */
-  /* font-size: 18px; Увеличиваем размер текста */
-  cursor: pointer;
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
-  transition: filter 0.3s ease;
+background-color: transparent; /* Убираем фон */
+color: #000;
+font-weight: bold;
+border: none;
+/* border-radius: 25px; */
+/* padding: 20px 30px; Увеличиваем отступы для увеличения размера кнопки */
+/* font-size: 18px; Увеличиваем размер текста */
+cursor: pointer;
+display: flex;
+/* align-items: center;
+justify-content: center; */
+transition: filter 0.3s ease;
 }
 
 /* Увеличиваем размер изображения */
 .admin-panel-button img {
-  width: 35px; /* Увеличиваем размер изображения */
-  height: 35px;
-  /* margin-left: 10px; */
-  border: none;
-  transition: filter 0.3s ease;
+width: 35px; /* Увеличиваем размер изображения */
+height: 35px;
+/* margin-left: 10px; */
+border: none;
+transition: filter 0.3s ease;
 }
 
 /* При наведении меняем цвет изображения */
 .admin-panel-button:hover img {
-  filter: brightness(0) saturate(100%) invert(43%) sepia(87%) saturate(378%) hue-rotate(97deg) brightness(98%) contrast(104%);
+filter: brightness(0) saturate(100%) invert(43%) sepia(87%) saturate(378%) hue-rotate(97deg) brightness(98%) contrast(104%);
 }
 
 /* Позиционирование кнопки справа */
 .header-right {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+display: flex;
+align-items: center;
+gap: 30px;
 }
 

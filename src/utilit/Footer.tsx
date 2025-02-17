@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import './Footer.css';
+import handleDownload from "./ZooFeelDownload";
 
 import { ReactComponent as AndroidIcon } from '../assets/android.svg';
 
@@ -24,8 +25,8 @@ const Footer: React.FC = () => {
             <p className='logo-class'><span className='logo-span'>ZOO</span>FEEL</p> 
           </h1>
           <div className='group-about'>
-          <p><a className='about' href="#/about">Про нас</a></p>
-          <p><a className='about' href="#/privacy-policy">Політика конфіденційності</a></p>
+          <p><a className='about' href="/about">Про нас</a></p>
+          <p><a className='about' href="/privacy-policy">Політика конфіденційності</a></p>
           </div>
           <p className='dreamteam'>DreamTeam © 2025 All rights reserved</p>
         </div>
@@ -33,7 +34,7 @@ const Footer: React.FC = () => {
         {/* Кнопка загрузки приложения */}
         <div className="footer-downloadsect">
           <h3 className='footer-download'>ЗАВАНТАЖТЕ ДОДАТОК</h3>
-          <button className="download-button">
+          <button className="download-button" onClick={handleDownload}>
             <div>
             <p>ЗАВАНТАЖИТИ </p>
             <p className='text-andr'>для Android</p>

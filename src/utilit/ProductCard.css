@@ -31,6 +31,15 @@
 .product-title {
   font-size: 18px;
   font-weight: bold;
+
+  word-wrap: break-word;
+ 
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+          line-clamp: 1; 
+  -webkit-box-orient: vertical;
+
   margin-bottom: 10px;
 }
 

@@ -22,6 +22,7 @@ const Header: React.FC = () => {
   const [isRegisterModalOpen, setRegisterModalOpen] = useState(false);
   const [isUserIconActive, setUserIconActive] = useState(false);
   const [hasToken, setHasToken] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -33,12 +34,27 @@ const Header: React.FC = () => {
     const token = localStorage.getItem('token');
     if (token) {
       setHasToken(true);
+      // Запрашиваем информацию о пользователе с бекенда
+      fetch(`${API_URL_BASE}/auth/user/role`, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.is_admin) {
+          setIsAdmin(true); // Если админ, то обновляем состояние
+        }
+      })
+      .catch(error => console.error('Error checking user role:', error));
     }
   }, [])
 
   const handleExit = () => {
     localStorage.removeItem('token');
     setHasToken(false);
+    setIsAdmin(false); // Сбрасываем состояние админства
     window.location.href = '/';
   }
   
@@ -67,9 +83,11 @@ const Header: React.FC = () => {
       if (response.ok) {
         const data = await response.json();
         localStorage.setItem('token', data.token);
-        setHasToken(true)
+        setHasToken(true);
+        setIsAdmin(data.is_admin); // Сохраняем роль пользователя
         closeModals();
-      } else { alert("Помилка не вірні дані");
+      } else { 
+        alert("Помилка не вірні дані");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -97,10 +115,11 @@ const Header: React.FC = () => {
       });
 
       if (response.ok) {
-        // const data = await response.json();
+        const data = await response.json();
         // localStorage.setItem('token', data.token);
         closeModals();
       } else {
+        alert("Ошибка регистрации");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -150,9 +169,9 @@ const Header: React.FC = () => {
           </div>
           {hasToken && (
             <button className="post-ad-button" onClick={() => navigate('/post-ad')}>
-            РОЗМІСТИТИ ОГОЛОШЕННЯ
-          </button>
-        )}
+              РОЗМІСТИТИ ОГОЛОШЕННЯ
+            </button>
+          )}
         </div>
         <div className="header-right">
           <svg className={`icon ${isSavedAdsPage ? 'icon-active' : ''}`} onClick={handleHeartClick}>
@@ -160,25 +179,26 @@ const Header: React.FC = () => {
           </svg>
           {!hasToken && (
             <svg className={`icon-user ${isUserIconActive ? 'icon-active' : ''}`} onClick={openLoginModal}>
-            <use xlinkHref="/symbol-defs.svg#icon-user" />
-          </svg>
-        )}
+              <use xlinkHref="/symbol-defs.svg#icon-user" />
+            </svg>
+          )}
           {hasToken && (
-        <button onClick={handleExit}  style={{
-          padding: '10px 20px',
-          borderRadius: '20px',
-          backgroundColor: 'red',
-          color: 'white',
-          border: 'none',
-          cursor: 'pointer',
-        }}>Exit</button>
-      )}
+            <button onClick={handleExit}  style={{
+              padding: '10px 20px',
+              borderRadius: '20px',
+              backgroundColor: 'red',
+              color: 'white',
+              border: 'none',
+              cursor: 'pointer',
+            }}>Exit</button>
+          )}
 
-      {/* Новая кнопка для перехода в админ-панель */}
-      <button
-          className="admin-panel-button" onClick={() => navigate('/admin-panel-modul')}>
-          <img src={adminPanelIcon} alt="Admin Panel"/>
-        </button>
+          {/* Условное отображение кнопки админ-панели */}
+          {isAdmin && (
+            <button className="admin-panel-button" onClick={() => navigate('/admin-panel-modul')}>
+              <img src={adminPanelIcon} alt="Admin Panel"/>
+            </button>
+          )}
         </div>
       </header>
 
