@@ -92,10 +92,12 @@ export const ProductDetailsPage: React.FC = () => {
           </div>
 
           {/* Кнопки */}
+          <div className="contact-position-button"> 
           <button className="contact-button" onClick={() => setIsContactModalOpen(true)}>ЗВ'ЯЗАТИСЯ</button>
           <button className="save-button" onClick={handleCartButtonClick}>
             {isInCart(product.id) ? 'ВИДАЛИТИ' : 'ДОДАТИ В ОБРАНЕ'}
           </button>
+          </div>
         </div>
       </div>
 
