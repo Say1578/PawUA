@@ -100,6 +100,12 @@
 }
 
 /* Кнопки */
+.contact-position-button {
+    display: flex;
+    flex-direction: column;
+}
+    
+
 .contact-button {
     width: 284px;
     padding: 12px 0;
