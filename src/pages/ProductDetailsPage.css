@@ -49,9 +49,9 @@
 }
 
 /* Левая сторона (Фото) */
-.product-left {
+/* .product-left {
     flex: 1;
-}
+} */
 
 .product-image-large {
     max-width: 100%;
@@ -59,9 +59,9 @@
 }
 
 /* Правая сторона (Информация) */
-.product-right {
+/* .product-right {
     flex: 1;
-}
+} */
 
 .product-title {
     font-size: 22px;
