@@ -162,6 +162,7 @@ const Header: React.FC = () => {
         <div className="header-left">
           <div className="brand" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
             <span className="zoo">ZOO</span>
+            <span className="feel">SHOP</span>
           </div>
           <div className="paw-center">
             <PawIcon className="paw-icon" />
