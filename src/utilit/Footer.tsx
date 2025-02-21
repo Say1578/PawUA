@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <h3 className='footer-title'>КОНТАКТНА ІНФОРМАЦІЯ</h3>
           <div className='adress'>
           <p className='footer-item'>м.Запоріжжя вул Кияшка 16-б</p>
-          <a className='footer-link' href="mailto:info@zoofeel.com">info@PAWUA.com</a>
+          <a className='footer-link' href="mailto:info@PAWUA.com">info@PAWUA.com</a>
           <a className='footer-link' href="tel:+380962281488">+38 096 228 14 88</a>
           </div>
         </div>
