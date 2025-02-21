@@ -1,6 +1,7 @@
 .product-list {
   padding: 30px;
   margin: 20px;
+  flex-wrap: wrap;
 }
 
 .post-title {
