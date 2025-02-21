@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         {/* Логотип и ссылки */}
         <div className="footer-logosect">
           <h1 className="footer-logo">
-            <p className='logo-class'><span className='logo-span'>ZOO</span> SHOP</p> 
+            <p className='logo-class'><span className='logo-span'>ZOO</span>SHOP</p> 
           </h1>
           <div className='group-about'>
           <p><a className='about' href="#/about">Про нас</a></p>
